@@ -23,7 +23,7 @@ def send_cmd(device, cmd_list):
     response = {}
     for command in cmd_list:
         response[command] = net_connect.send_command(command)
-	net_connect.disconnect()
+    net_connect.disconnect()
     return response
 
 
